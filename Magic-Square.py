@@ -10,17 +10,17 @@ def magic_square(n):
    num=n*n
    count=1
    while(count<=num):
-        if(i==-1 and j==n):            #condition 4
+        if(i==-1 and j==n):            
             j=n-2
             i=0
         else:
-            if(j==n):                  #column value is exceeding
+            if(j==n):                  
                j=0
-            if(i<0):                   #row is becoming -1
+            if(i<0):                   
                i=n-1
         if(magicSquare[i][j]!=0):
             j=j-2
-            i=i+1                      #condition 1
+            i=i+1                      
             continue
         else:
             magicSquare[i][j] = count
